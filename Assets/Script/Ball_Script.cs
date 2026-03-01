@@ -13,9 +13,9 @@ public class Ball_Script : MonoBehaviour
 
     private void BallMovement()
     {
-        // Vector2 dir = Random.value < 0.5f ? Vector2.left : Vector2.right;
+        Vector2 dir = Random.value < 0.5f ? Vector2.left : Vector2.right;
 
-        // dir.y  = Random.Range(-initialAngle, initialAngle);
+        dir.y  = Random.Range(-initialAngle, initialAngle);
         rb.linearVelocity = Vector2.left * speed;
     }
 
