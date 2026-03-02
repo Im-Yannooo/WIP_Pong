@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2412361945632889207}
   m_Layer: 0
   m_Name: 'Ball '
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,4 +171,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball_Script
   speed: 3
   rb: {fileID: 8480204295253116380}
-  initialAngle: 0.67
+  initialAngle: 1
+  angleY: 3

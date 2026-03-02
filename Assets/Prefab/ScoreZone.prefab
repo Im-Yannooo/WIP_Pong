@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4166435469866267240}
   m_Layer: 0
   m_Name: ScoreZone
-  m_TagString: Untagged
+  m_TagString: ScoreZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,3 +91,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bac8e996545ad45aa52a38322fab26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Score_Zone_Script
+  ball: {fileID: 0}
