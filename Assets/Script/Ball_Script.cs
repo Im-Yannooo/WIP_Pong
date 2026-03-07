@@ -3,6 +3,7 @@ using UnityEngine;
 public class Ball_Script : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private Game_Manager GM;
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float initialAngle = 1.0f;
@@ -28,11 +29,15 @@ public class Ball_Script : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("ScoreZone"))
+        Score_Zone_Script SZ = collision.GetComponent<Score_Zone_Script>();
+
+        if (SZ)
         {
+            
             ResetBall();
             BallMovement();
         }
+        
     }
 
 
