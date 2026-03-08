@@ -470,6 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218028626}
+  - component: {fileID: 218028627}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -492,6 +493,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218028627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218028625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2827d4bf8e4336442b4aa7ffb5512424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game_Manager
+  P1: 0
+  P2: 0
+  P1_Score: {fileID: 1602525085}
+  P2_Score: {fileID: 870003413}
 --- !u!1 &222011691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1243,7 @@ GameObject:
   - component: {fileID: 870003410}
   - component: {fileID: 870003412}
   - component: {fileID: 870003411}
+  - component: {fileID: 870003413}
   m_Layer: 5
   m_Name: Right_Score
   m_TagString: Untagged
@@ -1354,6 +1372,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870003409}
   m_CullTransparentMesh: 1
+--- !u!114 &870003413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870003409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29eb225200ebb24483173abdbd24c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Score_Text
+  text: {fileID: 870003411}
 --- !u!1 &875111294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,13 +1424,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1100607715}
     m_Modifications:
+    - target: {fileID: 3992746485971566952, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
+      propertyPath: ID
+      value: left
+      objectReference: {fileID: 0}
     - target: {fileID: 4796781645519146075, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_Name
-      value: ScoreZone_Right (1)
+      value: ScoreZone_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935664153777378255, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
+      propertyPath: ID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7965314262933160739, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.4
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7965314262933160739, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1897,6 +1936,7 @@ GameObject:
   - component: {fileID: 1602525082}
   - component: {fileID: 1602525084}
   - component: {fileID: 1602525083}
+  - component: {fileID: 1602525085}
   m_Layer: 5
   m_Name: Left_Score
   m_TagString: Untagged
@@ -2025,6 +2065,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602525081}
   m_CullTransparentMesh: 1
+--- !u!114 &1602525085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602525081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29eb225200ebb24483173abdbd24c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Score_Text
+  text: {fileID: 1602525083}
 --- !u!1 &1696775108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2387,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2412361945632889207, guid: deabc4e6d2a31ff499a0acb141f970a9, type: 3}
+      propertyPath: GM
+      value: 
+      objectReference: {fileID: 218028627}
+    - target: {fileID: 2412361945632889207, guid: deabc4e6d2a31ff499a0acb141f970a9, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7534349160781982277, guid: deabc4e6d2a31ff499a0acb141f970a9, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -2356,13 +2417,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1100607715}
     m_Modifications:
+    - target: {fileID: 3992746485971566952, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
+      propertyPath: ID
+      value: right
+      objectReference: {fileID: 0}
     - target: {fileID: 4796781645519146075, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_Name
       value: ScoreZone_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 6935664153777378255, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
+      propertyPath: ID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7965314262933160739, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7965314262933160739, guid: b55f72e0d9d5fa34cb6bd3ff3937c90d, type: 3}
       propertyPath: m_LocalPosition.y

@@ -180,4 +180,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Paddle
   rb: {fileID: 7011266734913409160}
-  speed: 5
+  speed: 10

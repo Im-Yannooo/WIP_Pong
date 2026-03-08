@@ -33,7 +33,7 @@ public class Ball_Script : MonoBehaviour
 
         if (SZ)
         {
-            
+            GM.BallReachedToZone(SZ.ID);
             ResetBall();
             BallMovement();
         }

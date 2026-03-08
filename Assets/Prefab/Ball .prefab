@@ -169,7 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c6da5feaf4c4c4fbc5823f17b21aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball_Script
-  speed: 3
+  GM: {fileID: 0}
+  speed: 2
   rb: {fileID: 8480204295253116380}
   initialAngle: 1
   angleY: 3
